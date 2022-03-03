@@ -53,7 +53,7 @@ const App: React.FC = () => {
 
   return (
     <Routes>
-      <Route path="/" element={<Layout handleSearch={handleSearch} searchValue={searchValue} />}>
+      <Route path="/GNIVC" element={<Layout handleSearch={handleSearch} searchValue={searchValue} />}>
         <Route
           index
           element={(
