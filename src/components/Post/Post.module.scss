@@ -1,0 +1,54 @@
+@import '../../util/variables.scss';
+
+.postItem {
+  text-align: center;
+  border: 3px solid #aaaaaa;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 5px 10px;
+  background-color: #f0f078;
+  box-shadow: 2px 2px 2px 0 black;
+  width: 300px;
+
+  .postHeader {
+    margin: 0;
+  }
+
+  .postText {
+    display: block;
+  }
+
+  .postButton {
+    border: none;
+    background-color: white;
+    padding: 5px;
+
+    @media  (min-width: 1024px) {
+      &:hover {
+        background-color: rgb(90, 182, 90);
+        transition: background-color 0.3s;
+      }
+    }
+  }
+}
+
+.postBtnContainer {
+  display: flex;
+  justify-content: space-around;
+
+  .goToPost {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    font-size: 15px;
+    padding: 5px;
+    margin-left: 10px;
+
+    @media  (min-width: 1024px) {
+      &:hover {
+        background-color: rgb(90, 182, 90);
+        transition: background-color 0.3s;
+      }
+    }
+  }
+}

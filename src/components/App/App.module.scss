@@ -1,0 +1,48 @@
+@import '../../util/variables.scss';
+html {
+  min-height: 100%;
+  background-color: $backgroundColor;
+}
+
+main {
+  height: calc(100% - 50px);
+}
+
+.navLinkContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  padding-top: 5px;
+}
+
+.navLink {
+  display: block;
+  text-align: center;
+  padding: 5px;
+  text-decoration: none;
+  color: black;
+  background-color: #ffff9e;
+  width: 93%;
+  box-shadow: 2px 2px 2px 0 black;
+  transition: background-color 0.3s;
+
+  @media  (min-width: 1024px) {
+    &:hover {
+      background-color: white;
+      transition: background-color 0.3s;
+    }
+  }
+  
+  &:active {
+    background-color: white;
+    transition: background-color 0.3s;
+  }
+}
+
+.welcomeText {
+  padding: 10px;
+  font-size: 18px;
+  text-align: center;
+}
+

@@ -1,0 +1,53 @@
+.table {
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+}
+
+.thead {
+  font-size: 20px;
+
+  .tableCell {
+    width: 40vw;
+    border-top: 3px solid #aaaaaa;
+    border-bottom: 3px solid #aaaaaa;
+    border-right: none;
+  }
+}
+
+.tableCell {
+  padding: 10px;
+  width: 40vw;
+  border-bottom: 1px solid #aaaaaa;
+}
+
+.tableRow {
+  height: 8vh;
+  width: 100%;
+}
+
+
+.tableLineBtnContainer {
+  display: flex;
+  justify-content: space-around;
+  font-size: 12px;
+
+  @media screen and (min-width: 1024px) {
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  .tableBtn {
+    background-color: white;
+    border: none;
+    font-size: 12px;
+  }
+
+  .goToPost {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 5px;
+    margin-left: 10px;
+  }
+}

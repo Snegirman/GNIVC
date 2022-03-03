@@ -1,0 +1,69 @@
+@import '../../util/variables.scss';
+
+.viewNavContainer {
+  background-color: $backgroundColor;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  transition: bottom 0.3s;
+
+  
+
+  .viewNavButton {
+    background-color: #ffa620;
+    color: black;
+    padding: 15px 5px;
+    flex-grow: 1;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    border-top: 3px solid black;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    transition: background-color 0.3s;
+
+    &:active {
+      background-color: white;
+      transition: background-color 0.3s;
+    }
+
+    &:first-child {
+      border-right: 3px solid black;
+    }
+  }
+
+}
+
+.hidden {
+  transition: bottom 0.3s;
+  bottom: -50px;
+}
+
+
+@media screen and (min-width: 1024px) {
+  .viewNavContainer {
+  position: static;
+  justify-content: space-around;
+  padding-top: 20px;
+    
+  .viewNavButton {
+    flex-grow: 0;
+    width: 30vw;
+    border: 1px solid black;
+    box-shadow: 1px 1px 3px;
+    
+      &:first-child {
+        border: 1px solid black;
+      }
+
+      &:hover {
+        background-color: white;
+        transition: background-color 0.3s;
+      }
+    }
+  }
+}

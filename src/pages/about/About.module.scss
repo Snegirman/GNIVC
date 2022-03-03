@@ -1,0 +1,26 @@
+.aboutText {
+  padding: 10px;
+  font-size: 18px;
+}
+
+.backLinkCotainer {
+  display: flex;
+  justify-content: center;
+}
+
+.backLink {
+  display: block;
+  text-align: center;
+  padding: 5px;
+  text-decoration: none;
+  color: black;
+  background-color: #ffff9e;
+  width: 93%;
+  box-shadow: 2px 2px 2px 0 black;
+  transition: background-color 0.3s;
+  
+  &:active {
+    background-color: white;
+    transition: background-color 0.3s;
+  }
+}

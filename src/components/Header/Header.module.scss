@@ -1,0 +1,15 @@
+@import '../../util/variables.scss';
+
+.header {
+  background-color: $backgroundColor;
+  font-size: 30px;
+  font-weight: 800;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.happier {
+  font-weight: 900;
+  color: #ffa620;
+  // text-shadow: 2px 2px #000;
+}
